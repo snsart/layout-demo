@@ -1,0 +1,8 @@
+斗鱼二级页面分为三大块
+（1）最上方的导航栏
+（2）右侧的频道分类栏目
+（3）左侧是主页面
+知识点：
+1.-webkit-font-smoothing
+CSS3中用于webkit引擎(如chrome)中设置字体的抗锯齿或者说光滑度的属性。
+有3个属性：none用于小像素的文本、subpixel-antialiased浏览器默认的、antialiased反锯齿。

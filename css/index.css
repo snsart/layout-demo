@@ -1,0 +1,10 @@
+body{
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+#header .head{
+	min-width: 1200px;
+	width: 100%;
+	margin: 0;
+}
