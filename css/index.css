@@ -38,6 +38,7 @@ body{
 	width: 360px;
 	height: 50px;
 	background: url(../img/headleft.png);
+	z-index: 0;
 }
 
 #header .head{
@@ -46,11 +47,12 @@ body{
 	height: 50px;
 	margin: 0;
 	position: relative;
+	z-index: 200;
 }
 
 #header .head-logo{
 	display: block;
-	margin-left: 0;
+	margin-left: 100px;
 	height: 50px;
 	width: 88px;
 	background: url(../img/headlogo.png) left center no-repeat;
@@ -77,6 +79,86 @@ body{
 	color: #fff;
 }
 
+#header .head-nav>li.current a{
+	color: #fff;
+	background-color: #ff630e;
+	border-radius: 3px;
+}
+#header .head-nav .video-entry .video-entry-icon{
+	position: absolute;
+	top: -7px;
+	right: -18px;
+	width: 18px;
+	height: 20px;
+	background-image:url(../img/video_enter_icon.gif) ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#header .head-oth{
+	margin-right: 0;
+	position: relative;
+	
+}
+
+#header .head-oth .o-search{
+	position: relative;
+	margin: 13px 15px 0 0;
+	padding-left: 8px;
+	height: 25px;
+	border-radius: 100px;
+	background: #e8e8e8;
+}
+
+#header .head-oth .o-search .s-ipt{
+	display: block;
+	font-size: 12px;
+	background: 0 0;
+	border: none;
+	outline: 0;
+	width: 104px;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px;
+}
+
+#header .head-oth .o-search .s-ico{
+	display: block;
+	width: 22px;
+	height: 25px;
+	line-height: 25px;
+}
+
+#header .head-oth .o-history,#header .head-oth .o-follow,#header .head-oth .o-download{
+	padding: 15px 15px 0 0;
+	position: relative;
+	cursor: pointer;
+}
+
+#header .head-oth .o-history .h-txt,#header .head-oth .o-follow .f-txt,#header .head-oth .o-download .d-txt{
+	vertical-align: top;
+	line-height: 20px;
+	color: #fff;
+}
+
+#header .head-oth .o-login{
+	padding: 12px,15px,0 0;
+	position: relative;
+}
+
+#header .head-oth .o-login .l-pic{
+	width: 26px;
+	height: 26px;
+	overflow: hidden;
+}
+
+#header .head-oth .o-login .l-pic img{
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+}
+
+
 a,a:hover{
 	text-decoration: none;
 }
@@ -84,6 +166,7 @@ a:-webkit-any{
 	cursor: pointer;
 }
 
+/*注意下面的写法，记住此风格*/
 .fl,.fr{
 	display: inline;
 }
@@ -94,6 +177,9 @@ a:-webkit-any{
 
 .fr{
 	float: right;
+}
+.hide{
+	display: none !important;
 }
 
 ol,ul{

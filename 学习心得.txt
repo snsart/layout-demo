@@ -6,3 +6,53 @@
 1.-webkit-font-smoothing
 CSS3中用于webkit引擎(如chrome)中设置字体的抗锯齿或者说光滑度的属性。
 有3个属性：none用于小像素的文本、subpixel-antialiased浏览器默认的、antialiased反锯齿。
+
+2.data-* 属性
+定义和用法
+data-* 属性用于存储页面或应用程序的私有自定义数据。
+
+data-* 属性赋予我们在所有 HTML 元素上嵌入自定义 data 属性的能力。
+
+存储的（自定义）数据能够被页面的 JavaScript 中利用，以创建更好的用户体验（不进行 Ajax 调用或服务器端数据库查询）。
+
+data-* 属性包括两部分：
+
+属性名不应该包含任何大写字母，并且在前缀 "data-" 之后必须有至少一个字符
+属性值可以是任意字符串
+注释：用户代理会完全忽略前缀为 "data-" 的自定义属性。
+
+3.autocomplete定义和用法
+autocomplete 属性规定输入字段是否应该启用自动完成功能。
+
+自动完成允许浏览器预测对字段的输入。当用户在字段开始键入时，浏览器基于之前键入过的值，应该显示出在字段中填写的选项。
+注释：autocomplete 属性适用于 <form>，以及下面的 <input> 类型：text, search, url, telephone, email, password, datepickers, range 以及 color。
+autocomplete 属性是 HTML5 中的新属性。
+
+4.value属性
+定义和用法
+value 属性为 input 元素设定值。
+
+对于不同的输入类型，value 属性的用法也不同：
+
+type="button", "reset", "submit" - 定义按钮上的显示的文本
+type="text", "password", "hidden" - 定义输入字段的初始值
+type="checkbox", "radio", "image" - 定义与输入相关联的值
+注释：<input type="checkbox"> 和 <input type="radio"> 中必须设置 value 属性。
+
+注释：value 属性无法与 <input type="file"> 一同使用。
+
+5.label的for属性
+for 属性规定 label 与哪个表单元素绑定。
+
+隐式和显式的联系
+标记通常以下面两种方式中的一种来和表单控件相联系：将表单控件作为标记标签的内容，这样的就是隐式形式，或者为 <label> 标签下的 for 属性命名一个目标表单 id，这样就是显式形式。
+
+例如，在 XHTML 中：
+
+显式的联系：
+<label for="SSN">Social Security Number:</label>
+<input type="text" name="SocSecNum" id="SSN" />
+
+隐式的联系：
+<label>Date of Birth: <input type="text" name="DofB" /></label>
+第一个标记是以显式形式将文本 "Social Security Number:" 和表单的社会安全号码的文本输入控件 ("SocSecNum") 联系起来，它的 for 属性的值和控件的 id 一样，都是 SSN。第二个标记 ("Date of Birth:") 不需要 for 属性，它的相关控件也不需要 id 属性，它们是通过在 <label> 标签中放入 <input> 标签来隐式地连接起来的。
