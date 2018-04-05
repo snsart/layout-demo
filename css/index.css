@@ -3,6 +3,7 @@ body{
 	line-height: 1.5;
 }
 
+/*header*/
 #header.annualfestival-header{
 	background-color: #211a2a;
 	border-bottom-color: #eca42d;
@@ -129,6 +130,21 @@ body{
 	line-height: 25px;
 }
 
+.o-search .search-hot-key{
+	position:absolute;
+	left: 12px;
+	right: 25px;
+	top: 0;
+	cursor: text;
+	pointer-events: none;
+	line-height: 25px;
+	color: 9b9b9b;
+	bottom: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 #header .head-oth .o-history,#header .head-oth .o-follow,#header .head-oth .o-download{
 	padding: 15px 15px 0 0;
 	position: relative;
@@ -142,8 +158,12 @@ body{
 }
 
 #header .head-oth .o-login{
-	padding: 12px,15px,0 0;
+	padding: 12px 15px 0 0;
 	position: relative;
+}
+
+#header .head-oth .o-login a{
+	display: block;
 }
 
 #header .head-oth .o-login .l-pic{
@@ -152,11 +172,116 @@ body{
 	overflow: hidden;
 }
 
+#header .head-oth .o-login .l-txt{
+	display: inline-block;
+	max-width: 85px;
+	line-height: 26px;
+	font-size: 12px;
+	vertical-align: top;
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 #header .head-oth .o-login .l-pic img{
 	width: 26px;
 	height: 26px;
 	border-radius: 13px;
 }
+
+/*left*/
+#left{
+	top: 51px;
+	z-index: 104;
+}
+
+.left-menu{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #2c2c2c;
+	height: 100%;
+}
+
+#left .left-btn{
+	position: fixed;
+	top: 50%;
+	left: 50px;
+	z-index: 10;
+	overflow: hidden;
+	cursor: pointer;
+	width: 15px;
+	height: 150px;
+	margin-top: -50px;
+	display: block;
+}
+
+.left-btn span{
+	width: 15px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	display: block;
+	background: url(../img/leftbtn.png);
+}
+
+.left-menu .left-samll{
+	width: 50px;
+}
+
+.left-menu .c-ser .c-link a,.left-menu .small-nav ul li a{
+	display: block;
+	color: #c6c6c6;
+	text-align: center;
+	height: 44px;
+	padding: 18px 0;
+}
+
+.left-menu .c-ser .cr-icon ,.left-menu .small-nav ul li a .icon{
+	display: block;
+	background: url(../img/lefticon.png);
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+.left-menu .small-nav ul li a .is1{
+	background-position: 0 0;
+}
+
+.left-menu .small-nav ul li a .is2{
+	background-position: 0 -20px;
+}
+.left-menu .small-nav ul li a .is3{
+	background-position: 0 -40px;
+}
+.left-menu .small-nav ul li a .is4{
+	background-position: 0 -60px;
+}
+.left-menu .small-nav ul li a .is5{
+	background-position: 0 -80px;
+}
+
+.left-menu .c-ser{
+	width: 50px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.left-menu .c-ser .line,.left-menu .small-nav ul li.line{
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+	border-bottom: 1px solid #323232;
+	border-top:1px solid #1b1b1b ;
+}
+
 
 
 a,a:hover{
@@ -185,4 +310,5 @@ a:-webkit-any{
 ol,ul{
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
