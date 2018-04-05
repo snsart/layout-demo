@@ -3,6 +3,10 @@ body{
 	line-height: 1.5;
 }
 
+#container{
+	min-width: 1366px;
+}
+
 /*header*/
 #header.annualfestival-header{
 	background-color: #211a2a;
@@ -282,6 +286,87 @@ body{
 	border-top:1px solid #1b1b1b ;
 }
 
+/*mainbody页面*/
+#mainbody{
+	margin-left: 50px;
+	margin-top: 50px;
+	padding-top: 20px;
+	padding-left:120px ;
+	padding-right: 120px;
+	width: auto;
+	overflow: hidden;
+}
+
+.live-room{
+	position: relative;
+	z-index: 102;
+}
+
+.clearfix{
+	zoom: 1;
+}
+/*广告*/
+#mainbody .room-ad-top{
+	height: 100px;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	margin-bottom: 12px;
+	border-radius: 4px;	
+}
+
+#mainbody .room-ad-top .adBoradius{
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.playerCase{
+	position: relative;
+}
+
+.playerCase-main{
+	position: relative;
+	margin-right: 346px;
+}
+.room-mes{
+	position: relative;
+	background: #fff;
+	height: 124px;
+	margin-bottom: 10px;
+	border: 1px solid #e5e4e4;
+	border-radius:4px ;
+}
+.room-video{
+	background: #333;
+	position: relative;
+	overflow: hidden;
+	min-width: 100%;
+	height: 700px;
+}
+
+.stats-and-actions{
+	position: relative;
+	padding: 14px 15px 7px;
+	height: 67px;
+	border: 1px solid #e5e4e4;
+	border-top: none;
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+}
+
+
+
+.playerSub{
+	overflow: hidden;
+}
+
+.playerSub .live-room-nomal-right{
+	position: relative;
+	float: right;
+	width: 336px;
+	margin-left: 10px;
+	background: #fff;
+}
 
 
 a,a:hover{
